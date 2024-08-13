@@ -2,7 +2,7 @@ import { MongoClient, ServerApiVersion } from "mongodb";
 import dotEnv from "../config/conf";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
-const client = new MongoClient(dot_env.MONGODB_URI_DEV, {
+const client = new MongoClient(dotEnv.MONGODB_URI_DEV, {
   maxPoolSize: 20, // Set the maximun pool size
   serverApi: {
     version: ServerApiVersion.v1, // Set the Stable API version for MongoDB server API
